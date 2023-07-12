@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Generator</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <h1>Bill Generator</h1>
+
+  <form action="#" method="post" id="billForm">
+    <div>
+      <label for="referenceNo">Reference No.</label>
+      <input type="text" id="referenceNo" name="referenceNo" />
+    </div>
+
+    <div>
+      <label for="collectionDate">Collection Date:</label>
+      <input type="text" id="collectionDate" name="collectionDate" />
+    </div>
+
+    <div>
+      <label for="netbanking">Netbanking:</label>
+      <input type="text" id="netbanking" name="netbanking" />
+    </div>
+
+    <div>
+      <label for="consumerName">Consumer Name:</label>
+      <input type="text" id="consumerName" name="consumerName" />
+    </div>
+
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" />
+    </div>
+
+    <div>
+      <label for="paymentSource">Payment Source:</label>
+      <input type="text" id="paymentSource" name="paymentSource" />
+    </div>
+
+    <div>
+      <label for="accountNo">Account No.:</label>
+      <input type="text" id="accountNo" name="accountNo" />
+    </div>
+
+    <div>
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount" />
+    </div>
+
+    <div>
+      <label for="amountText">Amount Text:</label>
+      <input type="text" id="amountText" name="amountText" />
+    </div>
+
+    <button type="button" id="storeDataButton">Store Data</button>
+    <br>
+    <br>
+    <a id="downloadLink" href="data.html">Download Bill</a>
+
+  </form>
+
+  <div id="billData"></div>
+
+  <!-- Include Firebase SDK first -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

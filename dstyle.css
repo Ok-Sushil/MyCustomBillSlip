@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #billData {
+    margin: 20px;
+  }
+
+  .billEntry {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .billEntry p {
+    margin: 5px 0;
+  }
